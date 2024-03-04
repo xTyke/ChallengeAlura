@@ -1,0 +1,335 @@
+:root{
+    --blue: #0d0c3f;
+    --cinza: #c0c0c0;
+    --preto: #000000;
+    --branco: #ffffff;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+}
+
+body{
+    background-image: linear-gradient(
+    90deg,
+    black,
+    #0d0c3f);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+
+}
+
+.logo{
+    margin-left: 1em;
+    padding-top: 1em;
+    width: 2%;
+}
+
+main{
+    display: flex;
+    margin-left: 3em;
+    height: 100%;
+    width: 100%;
+}
+
+.texto{
+    border: none;
+    color: var(--azul);
+    margin-top: 6em;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+    margin-top: -20px;
+    resize: none;
+}
+
+::placeholder {color: var(--azul);}
+    .texto:focus{
+        outline: none;
+    }
+
+.bloco{
+    width: 400px;
+    height: 800px;
+    background-color: var(--branco);
+    background-image: url(/img/avatar.svg);
+    background-repeat: no-repeat;
+    border: none;
+    border-radius: 2em;
+    color: var(--blue);
+    margin-top: -1em;
+    margin-left: 6em;
+    padding-left: 1.25em;
+    position: fixed;
+    resize: none;
+}
+
+.bloco:focus{
+    outline: none;
+}
+
+.msg-codificada{
+    margin-top: 12em;
+    border: none;
+    text-align: center;
+    width: 300px;
+}
+
+.msg-codificada::placeholder{
+    font-size: 18px;
+}
+
+.botoes{
+    display: flex;
+    margin-top: 1em;
+}
+
+.botao-criptografar{
+    background: var(--branco);
+    border: 2px solid var(--blue);
+    border-radius: 1.5em;
+    color: var(--blue);
+    cursor: pointer;
+    height: 4em;
+    width: 14em;
+}
+
+.botao-criptografar:hover{
+    color: var(--branco);
+    background-color: var(--blue);
+    border-color: var(--branco);
+    border-width: 2px;
+}
+
+.botao-descriptografar{
+    background: var(--branco);
+    border: 2px solid var(--blue);
+    border-radius: 1.5em;
+    color: var(--blue);
+    cursor: pointer;
+    height: 4em;
+    margin-left: 2em;
+    width: 14em;
+}
+
+.botao-descriptografar:hover{
+    color: var(--branco);
+    background-color: var(--blue);
+    border-color: var(--branco);
+    border-width: 2px;
+}
+
+.botao-copiar{
+    border: 2px solid var(--blue);
+    border-radius: 1.5em;
+    color: var(--blue);
+    cursor: pointer;
+    height: 4em;
+    margin-left: -9.4em;
+    margin-top: 19em;
+    position: absolute;
+    width: 10em;
+}
+
+.botao-copiar:hover{
+    color: var(--branco);
+    background-color: var(--blue);
+    border-color: var(--branco);
+    border-width: 2px;
+}
+
+.info{
+    display: flex;
+    color: var(--cinza);
+    margin-top: 1em;
+    align-items: center;
+}
+
+h6{
+    font-size: 20px;
+}
+
+.info-img{
+    padding-right: 0.5em;
+    height: 0.8em;
+}
+
+@media (max-width: 768px){
+
+    main{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 2%;
+        padding: 0%;
+    }
+
+    .texto{
+        width: 96%;
+        margin-top: 10px;
+    }
+
+    .botao-criptografar{
+        height: 3em;
+        width: 12em;
+        font-size: 30px;
+        border-radius: 1em;
+    }
+
+    .botao-descriptografar{
+        height: 3em;
+        width: 12em;
+        margin-left: 15px;
+        font-size: 30px;
+        border-radius: 1em;
+    }
+
+    .bloco{
+        width: 94%;
+        height: 15%;
+        margin-top: 50px;
+        margin-left: 0%;
+        background-image: none;
+        position: fixed;
+        border-radius: 15px;
+    }
+
+    .msg-codificada{
+        text-align: center;
+        position: absolute;
+        margin-top: 40px;
+        margin-left: 125px;
+        width: 400px;
+        height: 100px;
+        border-color: #000000;
+        border-width: 10px;
+        padding: 0%;
+        font-size: 30px;
+    }
+
+    ::placeholder {color: var(--azul);}
+    .msg-codificada:focus{
+        outline: none;
+    }
+
+    .botao-copiar{
+        border: 2px solid var(--blue);
+        border-radius: 1em;
+        color: var(--branco);
+        background-color: var(--blue);
+        border-color: var(--branco);
+        border-width: 2px;
+        cursor: pointer;
+        height: 4em;
+        margin-left: -40px;
+        margin-top: 9em;
+        position: absolute;
+        width: 23em;
+    }
+
+    .botao-copiar:hover{
+        color: var(--branco);
+        background-color: var(--cinza);
+        border-color: var(--branco);
+        border-width: 2px;
+    }
+}
+
+@media (max-width: 375px){
+
+    .texto{
+        width: 96%;
+        margin-top: 10px;
+        height: 300px;
+        font-size: 18px;
+    }
+    
+    h6{
+        font-size: 14px;
+    }
+
+    .info{
+        margin-top: 2%;
+    }
+
+    .botoes{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .botao-criptografar{
+        height: 2em;
+        width: 96%;
+        font-size: 30px;
+        border-radius: 0.5em;
+        margin-bottom: 10px;
+        margin-top: -20px;
+    }
+
+    .botao-descriptografar{
+        height: 2em;
+        width: 96%;
+        font-size: 30px;
+        border-radius: 0.5em;
+        margin: 0%;
+    }
+
+    .bloco{
+        width: 94%;
+        height: 15%;
+        margin-top: 30px;
+        margin-left: 0%;
+        background-image: none;
+        position: fixed;
+        border-radius: 15px;
+    }
+
+    .msg-codificada{
+        text-align: center;
+        position: absolute;
+        margin-top: 15px;
+        margin-left: -25px;
+        width: 320px;
+        height: 100px;
+        border-color: #000000;
+        border-width: 10px;
+        padding: 0%;
+        font-size: 16px;
+    }
+
+    ::placeholder {color: var(--azul);}
+    .msg-codificada:focus{
+        outline: none;
+    }
+
+    .botao-copiar{
+        border: 2px solid var(--blue);
+        border-radius: 1em;
+        color: var(--branco);
+        background-color: var(--blue);
+        border-color: var(--branco);
+        border-width: 2px;
+        cursor: pointer;
+        height: 4em;
+        margin-left: -40px;
+        margin-top: 140px;
+        position: absolute;
+        width: 18em;
+        font-size: 20px;
+    }
+
+    .botao-copiar:hover{
+        color: var(--branco);
+        background-color: var(--cinza);
+        border-color: var(--branco);
+        border-width: 2px;
+    }
+}

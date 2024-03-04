@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Challenge ONE - Alura</title>
+</head>
+<body>
+    <!-- Espaço da Logo -->
+    <header>
+        <img class="logo" src="img/logo.png" alt="logo">
+    </header>
+    
+    <main>
+    <!-- Espaço da entrada de texto -->
+    <section>
+        <textarea placeholder="Digite seu texto..." class="texto" cols="55" rows="15"></textarea>
+        <div class="info">
+            <img class="info-img" src="img/info.png" alt="info-img">
+            <h6>Apenas letras minusculas e sem acento!</h6>
+        </div>
+        <div class="botoes">
+            <button class="botao-criptografar" onclick="btnCifrar()">Criptografar</button>
+            <button class="botao-descriptografar" onclick="btnDecifrar()">Descriptografar</button>
+        </div>
+    </section>
+    
+    <!-- Espaço de copiar e saida de criptogarfia do texto-->
+    <section>
+        <div class="bloco">
+        <input class="msg-codificada" id="msg-codificada" type="text" placeholder="Nenhuma mensagem encontrada." oninput="validarInput(this)">
+        <button class="botao-copiar" onclick="btnCopiar()">Copiar</button>
+        </div>
+    </section>
+</main>
+<script src="script.js"></script>
+<footer></footer>
+
+</body>
+</html>
