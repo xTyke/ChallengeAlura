@@ -6,11 +6,17 @@ Challenge Alura #01
   Está projeto é um codificador que permite ao usuário codificar as suas mensagens através de uma codificação simples, além disso também tem a funcionalidade de copiar o código gerado para melhor experiência do usuário.
 
 As "chaves" de criptografia que utilizaremos são:
+<br>
 A letra "e" é convertida para "enter"
+<br>
 A letra "i" é convertida para "imes"
+<br>
 A letra "a" é convertida para "ai"
+<br>
 A letra "o" é convertida para "ober"
+<br>
 A letra "u" é convertida para "ufat"
+<br>
 
 Observações:
 - Funciona apenas com letras minúsculas
